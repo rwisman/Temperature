@@ -1,0 +1,457 @@
+//
+//  Created by Ray Wisman on Aug 8, 2011.
+//  Copyright 2011 Indiana University SE. All rights reserved.
+//
+
+#import "TemperatureViewController.h"
+
+@implementation TemperatureViewController
+
+@synthesize sampleRateLabel;
+@synthesize sendButton;
+@synthesize thermometerView;
+@synthesize notificationCenter;
+@synthesize data;
+@synthesize levelTimer;
+@synthesize audioSession;
+@synthesize meterView;
+@synthesize meterButton;
+
+UIButton * startStopButton;
+AVAudioRecorder *recorder=nil;
+
+float temperature[MAXSAMPLES], collectionTime[MAXSAMPLES];
+float startTime;
+
+int ticks = 0;
+int n=0;
+BOOL start=NO;
+
+float updateTime = 0.5;
+float lowPassResults=-30.0;
+float calibrationCorrection = 0.0;
+
+-(void) resetButtons {
+	[startStopButton setBackgroundImage:[[UIImage imageNamed:@"start.png"] stretchableImageWithLeftCapWidth:110.0 topCapHeight:0.0] forState:UIControlStateNormal];
+	[startStopButton setTitle:@"Record" forState: UIControlStateNormal];
+	sendButton.enabled = YES; 	
+	coolerButton.enabled = YES; 	
+	hotterButton.enabled = YES; 	
+	fasterButton.enabled = YES; 	
+	slowerButton.enabled = YES; 	
+	saveButton.enabled = YES; 	
+	sampleRateLabel.alpha = 1.0;
+	start=FALSE;
+}	
+
+-(void) startCheck {
+	if(start) {
+		sendButton.enabled = NO;
+		coolerButton.enabled = NO; 	
+		hotterButton.enabled = NO; 	
+		fasterButton.enabled = NO; 	
+		slowerButton.enabled = NO; 	
+		saveButton.enabled = NO;
+		sampleRateLabel.alpha = 0.50;
+		
+		if(self.data)
+			[self.data release];
+		self.data = [Data alloc];
+		n=0; 
+		[startStopButton setTitle:@"Stop" forState: UIControlStateNormal];
+		[startStopButton setBackgroundImage:[[UIImage imageNamed:@"stop.png"] stretchableImageWithLeftCapWidth:110.0 topCapHeight:0.0] forState:UIControlStateNormal];
+		self.data.dataX = collectionTime;
+		self.data.dataY = temperature;
+		self.data.minTime = 0.0;
+		self.data.maxTime = 0.0;
+		self.data.minX = 0.0;
+		self.data.maxX = 0.0;
+		self.data.minY = 0.0;
+		self.data.maxY = 0.0;
+		self.data.startIndex = 0;
+		self.data.endIndex = 0;
+		self.data.newDataSet = TRUE;	
+	}
+	else {
+		[self resetButtons];
+		[notificationCenter postNotificationName: @"DATACHANGE" object: data];
+	}
+}
+
+#import <mach/mach.h>
+#import <mach/mach_host.h>
+
+static unsigned int free_memory () {
+	mach_port_t host_port;
+	mach_msg_type_number_t host_size;
+	vm_size_t pagesize;
+	
+	host_port = mach_host_self();
+	host_size = sizeof(vm_statistics_data_t) / sizeof(integer_t);
+	host_page_size(host_port, &pagesize); 
+	
+	vm_statistics_data_t vm_stat;
+	
+	if (host_statistics(host_port, HOST_VM_INFO, (host_info_t)&vm_stat, &host_size) != KERN_SUCCESS)
+		return 0;	//NSLog(@"Failed to fetch vm statistics");
+	
+	// Stats in bytes
+//	natural_t mem_used = (vm_stat.active_count +
+//						  vm_stat.inactive_count +
+//						  vm_stat.wire_count) * pagesize;
+	natural_t mem_free = vm_stat.free_count * pagesize;
+//	natural_t mem_total = mem_used + mem_free;
+//	NSLog(@"used: %u free: %u total: %u", mem_used, mem_free, mem_total);
+	return (unsigned int) mem_free;
+}
+
+- (void) initialize {
+	
+	NSError *error=nil;
+	
+	if(free_memory() < 12000000) {	// About the memory app requirements.
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Low memory." 
+													message:@"Double tap Home to exit other applications before continuing." 
+													delegate:nil 
+													cancelButtonTitle:@"Continue"
+													otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+
+	if(!self.audioSession.inputIsAvailable)  {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Temperature sensor not connected." 
+														message:@"" 
+													   delegate:nil 
+											  cancelButtonTitle:@"Continue"
+											  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		return;
+	}
+	
+	if(self.levelTimer) {
+		[self.levelTimer invalidate];
+		self.levelTimer = nil;
+	}
+	
+	if( m_bleepMachine) 
+		delete m_bleepMachine;
+
+	m_bleepMachine = new BleepMachine; 
+	m_bleepMachine->Initialise(); 
+	m_bleepMachine->SetWave(sineFrequency, 1 );
+	m_bleepMachine->Start();
+	
+	NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
+							  [NSNumber numberWithFloat: 44100.0 ],					AVSampleRateKey,
+							  [NSNumber numberWithInt: kAudioFormatAppleLossless],	AVFormatIDKey,
+							  [NSNumber numberWithInt: 1],							AVNumberOfChannelsKey,
+							  [NSNumber numberWithInt: AVAudioQualityMax],			AVEncoderAudioQualityKey,
+							  nil];
+	 	
+	if(recorder) {
+		if([recorder isRecording]) {
+			[recorder stop];			
+		}
+		[recorder release];
+	}
+	error = nil;
+	
+	NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
+	
+	recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error: &error];
+	
+	if(error) 
+		NSLog(@"recorder error %@\n", [error description]);
+
+	if (recorder) {
+		[recorder prepareToRecord];
+		recorder.meteringEnabled = YES;
+		[recorder record];		
+	} else
+		NSLog(@"recorder %@",[error description]);
+		
+	self.levelTimer = [NSTimer scheduledTimerWithTimeInterval: ALPHA target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];		
+	start = NO;
+	[self resetButtons];
+}	
+
+- (void)levelTimerCallback:(NSTimer *)timer {
+	ticks++;
+	
+	[recorder updateMeters];
+	
+	double decibel = [recorder peakPowerForChannel:0];
+													// low-pass filter, updateTime
+	lowPassResults = ALPHA*decibel+(1-ALPHA)*lowPassResults;
+		
+	double celsius = temperatureCelsius;
+	
+	if(isViewVisible && ticks % (int)(updateTime/ALPHA) == 0)  {		// update thermometer according to updateTime settings
+		NSString *s = [[NSString alloc] initWithFormat: @"%3.2f °C", celsius];
+		self.thermometerView.textLabel1.text = s;			
+		[s release];
+	
+		self.thermometerView.value = celsius;
+	}
+	
+	if(start) {
+		float currentTime = [recorder currentTime];
+		
+		if(n==0) {
+			collectionTime[n] = 0.0;
+			startTime=currentTime;
+			self.data.minTime = collectionTime[n];	// alias of:	self.data.dataX = collectionTime
+		}
+		else {
+			if(currentTime-startTime-collectionTime[n-1] < updateTime) return;
+			collectionTime[n]=currentTime-startTime;	
+		}
+		temperature[n] = celsius;					// alias of:	self.data.dataY = temperature
+		
+		if(isViewVisible)  {
+			NSString *s = [[NSString alloc] initWithFormat: @"Time %3.2f", collectionTime[n]];
+			self.thermometerView.textLabel2.text = s;		
+			[s release];
+		}
+		
+		self.data.maxTime = collectionTime[n];				
+		self.data.endIndex = n;
+		
+		if (!isViewVisible && n % (int)(2.0/updateTime) == 0) {			// Execute approximately every 2 seconds
+			self.data.newDataSet = FALSE;								// if !isViewVisible
+			[notificationCenter postNotificationName: @"DATACHANGE" object: self.data];		
+		}
+		n++;
+		
+		if(n==MAXSAMPLES) {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Maximum samples recorded." 
+															message:@"Email recorded data." 
+														   delegate:nil 
+												  cancelButtonTitle:@"Continue"
+												  otherButtonTitles:nil];
+			[alert show];
+			[alert release];
+			
+			[self resetButtons]; 	
+		}
+	}
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	isViewVisible=YES;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+	isViewVisible=NO;
+}
+
+- (void)inputIsAvailableChanged:(BOOL)isInputAvailable {
+	[self initialize];
+}
+	
+- (BOOL)shouldAutorotateToInterfaceOrientation:
+	(UIInterfaceOrientation)toInterfaceOrientation {
+    return  toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown;
+}
+
+- (void)viewDidLoad {	
+	[super viewDidLoad];
+	
+	NSError *error=nil;
+	isViewVisible=YES;
+	self.audioSession = [AVAudioSession sharedInstance];
+	[self.audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error: &error];
+	if(error) 
+		NSLog(@"AVAudioSession error %@\n", [error description]);
+	[self.audioSession setActive:YES error: &error];
+	[self.audioSession setDelegate:self];
+
+	self.view.autoresizesSubviews = YES;
+	self.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin);
+	
+//	Terrible hack to use IB for UI layout by connecting File Owner meterView IBObject to some UIView subclass (other than MeterView). Allows resizing for iPad or iPhone.
+	
+	self.thermometerView = [[MeterView alloc] initWithFrame: self.meterView.layer.frame]; 
+	
+	self.thermometerView.layer.bounds = meterView.layer.bounds;
+	self.thermometerView.layer.frame = meterView.layer.frame;
+	self.thermometerView.center = self.meterView.center;
+	self.thermometerView.backgroundColor = self.meterView.backgroundColor;	
+	self.thermometerView.contentMode = self.meterView.contentMode;	
+	self.thermometerView.contentStretch = self.meterView.contentStretch;	
+	self.thermometerView.transform = self.meterView.transform;	
+	[self.view addSubview: self.thermometerView];
+	
+	[self.meterView release];	
+	[self.thermometerView release];			// retained by addSubview
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	float calibrationSetting = [defaults floatForKey:@"Calibration"];
+	if(calibrationSetting != 0)
+		calibrationCorrection = calibrationSetting;
+
+	self.thermometerView.lineWidth = 2.5;
+	self.thermometerView.minorTickLength = 15.0;
+	self.thermometerView.needle.width = 3.0;
+	self.thermometerView.startAngle = M_PI/2.0 + 0.1*M_PI;
+	self.thermometerView.arcLength = 1.8*M_PI;
+	self.thermometerView.maxNumber = 180.0;
+	self.thermometerView.minNumber = -100.0;
+	self.thermometerView.value = 25.0;
+	self.thermometerView.textLabel1.font = [UIFont fontWithName:@"HelveticaNeue-BoldItalic" size:16.0];
+	self.thermometerView.textLabel1.textColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];	
+	self.thermometerView.textLabel1.text = [NSString stringWithFormat:@"%3.2f %@", self.thermometerView.value, @"°C"];
+	self.thermometerView.textLabel2.font = [UIFont fontWithName:@"HelveticaNeue-BoldItalic" size:16.0];
+	self.thermometerView.textLabel2.textColor = [UIColor colorWithRed:0.25 green:0.25 blue:0.25 alpha:1.0];	
+	self.thermometerView.textLabel2.text = [NSString stringWithFormat:@"%@%3.2f", @"Time ", 0.0];
+		
+	self.notificationCenter = [NSNotificationCenter defaultCenter];
+	
+	self.data = nil;
+	
+	[notificationCenter addObserver: self 
+						   selector: @selector(updateData:) 
+							   name: @"DATAREQUEST" 
+							 object: nil];	
+	[self initialize];
+	[self startCheck];
+}
+
+-(IBAction) startStopButton: (id) sender {
+	startStopButton = (UIButton *) sender;
+	
+	start = !start;
+	[self startCheck];
+
+}
+
+-(IBAction) saveButton: (id) sender {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setFloat: calibrationCorrection forKey:@"Calibration"];
+}
+-(IBAction) hotterButton: (id) sender {
+		calibrationCorrection = calibrationCorrection+0.1;
+}
+-(IBAction) coolerButton: (id) sender {
+		calibrationCorrection = calibrationCorrection-0.1;
+}	
+	
+-(IBAction) fasterButton: (id) sender {
+	if(updateTime-0.1 >= 0.1) updateTime=updateTime - 0.1;
+	NSString *s = [[NSString alloc] initWithFormat:@"%3.1fs", updateTime];
+	sampleRateLabel.text=s;
+	[s release];
+}
+
+-(IBAction) slowerButton: (id) sender {
+	if(updateTime < 1.0) updateTime=updateTime + 0.1;
+	NSString *s = [[NSString alloc] initWithFormat:@"%3.1fs", updateTime];
+	sampleRateLabel.text=s;
+	[s release];
+}	
+
+-(IBAction) sendButton: (id) sender {
+	if(![MFMailComposeViewController canSendMail]) {
+		UIAlertView *cantMailAlert=[[UIAlertView alloc] 
+								   initWithTitle:@"Can't mail" 
+								   message:@"This device not configured for email."
+								   delegate: NULL
+								   cancelButtonTitle:@"Dismiss"
+								   otherButtonTitles:NULL];
+		[cantMailAlert show];
+		[cantMailAlert release];
+		return;
+	}
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSString *fileName = [defaults stringForKey:@"File"];
+	if(!fileName)
+		fileName = @"temperature.csv";
+	NSString *email = [defaults stringForKey:@"email"];
+	NSArray *recipients; 
+	if(!email)
+		recipients = [[NSArray alloc] initWithObjects: nil];
+	else 
+		recipients = [[NSArray alloc] initWithObjects: email, nil];
+	
+	NSMutableString *string = [[NSMutableString alloc] init];
+	[string appendFormat:@"%@\n",@"time, Celsius"];
+	
+	for(int i=0;i<n;i++) 
+		[string appendFormat:@"%f,%f\n",collectionTime[i], temperature[i]];
+	
+	NSData* csvData;
+	csvData = [string dataUsingEncoding: NSASCIIStringEncoding];
+	
+	MFMailComposeViewController *mailController = [[[MFMailComposeViewController alloc] init] autorelease];
+	[mailController setSubject:@"Temperature data"];
+	[mailController setToRecipients:recipients];
+	[mailController setCcRecipients:nil];
+	[mailController setBccRecipients:nil];
+	[mailController setMessageBody:nil isHTML:NO];
+	[mailController addAttachmentData:csvData mimeType:@"text/csv" fileName: fileName];
+	mailController.mailComposeDelegate=self;
+	[self presentModalViewController:mailController animated:YES];
+	[string release];
+	[recipients release];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller 
+		  didFinishWithResult:(MFMailComposeResult)result 
+						error:(NSError*)error {
+	[controller dismissModalViewControllerAnimated:YES];
+}
+
+-(void) updateData: (NSNotification *) notification { 
+	if(self.data == nil) return;
+	[notificationCenter postNotificationName: @"DATACHANGE" object: self.data];		
+}
+
+- (void)didReceiveMemoryWarning {
+	if(self.levelTimer) {
+		[self.levelTimer invalidate];
+		self.levelTimer = nil;
+	}
+
+	if(recorder) {
+		if([recorder isRecording]) {
+			[recorder stop];
+		}
+		[recorder release];
+	}
+	
+	if( m_bleepMachine) 
+		delete m_bleepMachine;
+
+	if(self.thermometerView) [self.thermometerView release];
+
+	if(self.audioSession) [self.audioSession release];
+	
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Low memory warning." 
+													message:@"Email recorded data and exit." 
+												   delegate:nil 
+										  cancelButtonTitle:@"Continue"
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+	[self resetButtons];
+	[super didReceiveMemoryWarning];
+}
+
+- (void)viewDidUnload {}
+
+- (void)dealloc {
+	if(recorder) [recorder release];
+	if(self.thermometerView) [self.thermometerView release];
+	if(m_bleepMachine) delete m_bleepMachine;
+	if(self.levelTimer) [self.levelTimer invalidate];
+	if(self.data) [self.data release];
+	if(self.audioSession) [self.audioSession release];
+	[notificationCenter release];
+
+    [super dealloc];
+}
+
+@end

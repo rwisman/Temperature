@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/SDKBuild
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/SDKBuild/build.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/SDKBuild/README.txt
+END
+cp.sed
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/SDKBuild/cp.sed
+END
+iphonesimulator-SDKSettings.plist
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/SDKBuild/iphonesimulator-SDKSettings.plist
+END
+iphoneos-SDKSettings.plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/SDKBuild/iphoneos-SDKSettings.plist
+END

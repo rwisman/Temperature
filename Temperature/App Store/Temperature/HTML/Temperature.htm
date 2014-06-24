@@ -1,0 +1,162 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Raymond F. Wisman">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link REL="stylesheet" href="basic.css" type="text/css">
+<title>Temperature</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" 
+alink="#FF0000">
+
+	<p><font size="5"><b>Mobile Science</b></font></p>
+	<blockquote>
+		<table border="0" cellpadding="10" cellspacing="0">
+			<tr>
+				<td><font size="5"> 
+	<img border="0" src="Temperature.png" align="left" width="57" height="57"><b>Temperature</b></font> 
+	by Ray Wisman and Kyle Forinash, Indiana University SE. 
+
+				<p>App store:</p>
+				<blockquote>
+					<p>
+					<a href="https://itunes.apple.com/us/app/mobile-science-temperature/id467423322?mt=8">
+					https://itunes.apple.com/us/app/mobile-science-temperature/id467423322?mt=8</a></p>
+				</blockquote>
+
+<h2>Description</h2>
+<blockquote>
+	<p><i>Temperature</i> records, graphs and emails temperature measurements 
+	from a <i>thermistor</i> circuit (see below) connected through the iPod/iPhone/iPad 
+	headset 
+	port. For testing the application, a standard headset jack can be used.</p>
+	<p>The application is useful for measuring current temperature or recording 
+	temperature changes over a time period.</p>
+	<p>Up to two days of temperature measurements can be recorded at rates of 1 to 10 
+	samples per second. The measurements are graphed as recorded and can also be 
+	emailed. </p>
+</blockquote>
+				</td>
+				<td>Acknowledgements:<blockquote>
+			<p>Tab bar icons by Joseph Wain 
+	@ glyphish.com.<br>Core-Plot for graphs, http://code.google.com/p/core-plot.<br>
+			Clock image by 
+			http://commons.wikimedia.org/wiki/File:Crystal_Clear_app_clock.png<br>
+			Colored LED Rectangles by http://www.clker.com<br>
+			Sine wave generation by Andy Buchanan, 2010, http://stackoverflow.com/questions/2067267/where-to-start-with-audio-synthesis-on-iphone<br>
+			Thermistor circuit, 
+			<a href="http://hmb-tec.de/iPhoneApps/Thermometer.html">http://hmb-tec.de/iPhoneApps/Thermometer.html</a><br>
+			MeterView by Frank Schmitt on 2010-12-04, Copyright © 2011 Laika 
+			Systems</p>
+		</blockquote>
+				<blockquote>
+					<p>&nbsp;</p>
+				</blockquote>
+				</td>
+			</tr>
+		</table>
+	</blockquote>
+
+	<blockquote>
+	<p><b>Views</b> </p>
+	<table border="0" cellspacing="0">
+		<tr>
+			<td>
+	<img border="0" src="photo1.PNG" style="border-style: groove; border-width: 1px" hspace="30"><br>
+&nbsp;</td>
+			<td><b>Controls</b><blockquote>
+				<p><b>Volume</b> control provides rough calibration to a known temperature, such 
+				as an external thermometer.</p>
+				<p><b>Hotter/Cooler </b>for finer calibration in steps of 0.1 
+				C°.<br>
+				<br>
+				<b>Faster/Slower </b>temperature updates from 0.1s to 1s 
+				intervals in steps of 0.1s.</p>
+				<p><b>Save</b> the fine calibration setting, automatically 
+				reloaded at app startup.</p>
+				<p><b>Record/Stop</b> to record/stop recording temperatures. The 
+				recorded temperatures are plotted and can be emailed in a 
+				spreadsheet readable format.</p>
+				<p><b>Email</b><i> </i>the recorded measurements.</p>
+				<p><b>Time </b>is the time in seconds since <i>Start</i> button 
+				pressed.</p>
+				<p>&nbsp;</p>
+			</blockquote>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<img border="0" src="photo2.PNG" width="320" height="480" align="center" style="border-style: groove; border-width: 1px" hspace="30"></td>
+			<td><b>Plot</b><blockquote>
+				<p><i>Temperature</i> is the vertical axis of the graph, scaled to fit the maximum and minimum value 
+				over the time to be displayed.
+				<p><i>Time</i> is displayed horizontally.<p>Sliders set the <i>Start 
+				</i>and<i> 
+	End</i> of the time interval displayed.<p>A maximum of 250 data points 
+	between the <i>Start</i> and <i>End</i> points are graphed to maintain 
+	responsiveness.<br>
+&nbsp;</blockquote>
+	<p><b>Preferences</b><blockquote>
+	<p>Email addressee, fine calibration and attachment file name preferences are in <i>Settings</i>.<br>
+&nbsp;</blockquote>
+			<p><b>Example</b><blockquote>
+				<p>The graph illustrates holding the thermistor between two 
+				fingers then releasing with a return to ambient temperature.</blockquote>
+			</td>
+		</tr>
+	</table>
+	<p>
+	&nbsp;</p>
+</blockquote>
+<p><b>Thermistor Circuit</b></p>
+	<blockquote>
+		<p>
+		<img border="0" src="photo3.png" width="975" height="731"></p>
+		<p>The simple thermistor circuit and <i>Temperature</i> app.</p>
+		<p>
+		<img border="0" src="photo4.png" width="977" height="645"></p>
+		<p>R1 = 10k&#937;, R2 = 220&#937;, C = 0.1&#956;F. The headset jack is a standard 
+		four-pole jack.</p>
+	</blockquote>
+	<p><b>Using the Headset Port</b></p>
+	<blockquote>
+		<p>The headset port can serve to interface to devices that produce 
+		similar resistance change characteristics to that of the thermistor. For 
+		example, ambient light levels can be measured by replacing the 
+		thermistor with a light activated photo resistor. </p>
+		<p>Designed for audio, the headset port filters DC current inputs and 
+		outputs. However, a sine wave with frequency ranging up to 20kHz can be 
+		output by a phone app from the headset port to serve as input to the 
+		temperature circuit. The amplitude of the returning sine wave output is 
+		determined by the resistance of the thermistor. Only the amplitude of 
+		the sine wave varies in the circuit, not the frequency. The amplitude of 
+		the circuit output is then measured through the headset microphone as 
+		a decibel (dB) reading by our phone app . To reduce noise due to 
+		sampling errors, a low pass filter is applied to the peak decibel 
+		reading of the returning sine wave as measured over a short period of 
+		time. Since decibels are already a natural log scale, the relation 
+		between dB and temperature will be linear instead of exponential, as 
+		seen in the sample data below. A least squares fit to the data gives a 
+		straight-line equation that relates the circuit output to other 
+		temperatures. Programmed with the equation and calibrated to a 
+		temperature on the line, the app can measure temperature. The headset 
+		volume control serves to calibrate for individual circuit differences.
+		</p>
+		<p>
+		<img border="0" src="photo5.png" width="628" height="435"></p>
+		<p>The fitted linear equation relates dB to temperature for the 
+		thermistor circuit. The plot of temperature (in Celsius) versus peak 
+		amplitude from the thermistor in decibels taken for temperatures, 
+		respectively, in the freezer compartment of a refrigerator, in ice 
+		water, in the refrigerator, in an air-conditioned room, outside during 
+		the day, in boiling water.</p>
+	</blockquote>
+
+</body>
+
+</html>

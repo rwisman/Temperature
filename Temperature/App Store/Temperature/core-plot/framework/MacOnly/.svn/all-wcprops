@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly
+END
+CPDecimalNumberValueTransformer.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPDecimalNumberValueTransformer.h
+END
+CPLayerHostingView.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPLayerHostingView.m
+END
+CPPlatformSpecificDefines.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPPlatformSpecificDefines.h
+END
+CPPlatformSpecificFunctions.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPPlatformSpecificFunctions.m
+END
+CPDecimalNumberValueTransformer.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPDecimalNumberValueTransformer.m
+END
+CPPlatformSpecificDefines.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPPlatformSpecificDefines.m
+END
+CPPlatformSpecificCategories.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPPlatformSpecificCategories.h
+END
+CPTextStylePlatformSpecific.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPTextStylePlatformSpecific.h
+END
+CPLayerHostingView.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPLayerHostingView.h
+END
+CPPlatformSpecificFunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPPlatformSpecificFunctions.h
+END
+CPPlatformSpecificCategories.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPPlatformSpecificCategories.m
+END
+CPTextStylePlatformSpecific.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/MacOnly/CPTextStylePlatformSpecific.m
+END

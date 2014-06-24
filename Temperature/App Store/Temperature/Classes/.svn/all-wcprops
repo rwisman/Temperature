@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes
+END
+Data.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/Data.h
+END
+AppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/AppDelegate.h
+END
+BleepMachine.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/BleepMachine.h
+END
+MeterView.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/MeterView.m
+END
+TemperatureViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/TemperatureViewController.h
+END
+BleepMachine.mm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/BleepMachine.mm
+END
+Data.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/Data.m
+END
+TemperatureViewController.mm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/TemperatureViewController.mm
+END
+AppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/AppDelegate.m
+END
+TemperaturePlotController.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/TemperaturePlotController.h
+END
+PlotController.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/PlotController.h
+END
+TemperaturePlotController.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/TemperaturePlotController.m
+END
+MeterView.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/MeterView.h
+END
+PlotController.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/Classes/PlotController.m
+END

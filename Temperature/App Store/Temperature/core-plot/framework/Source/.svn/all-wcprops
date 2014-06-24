@@ -1,0 +1,857 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source
+END
+CPXYAxisSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYAxisSet.m
+END
+CPPlotArea.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotArea.h
+END
+CPAnimationKeyFrame.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnimationKeyFrame.m
+END
+CPDarkGradientThemeTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDarkGradientThemeTests.m
+END
+NSDecimalNumberExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/NSDecimalNumberExtensions.m
+END
+CPTestCase.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTestCase.h
+END
+CPPlotArea.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotArea.m
+END
+CPTestCase.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTestCase.m
+END
+CPImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPImage.h
+END
+CPXYAxis.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYAxis.h
+END
+CPImage.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPImage.m
+END
+CPXYAxis.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYAxis.m
+END
+CPPlotSpace.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotSpace.h
+END
+CPUtilitiesTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPUtilitiesTests.h
+END
+CPPlotSpace.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotSpace.m
+END
+CPUtilitiesTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPUtilitiesTests.m
+END
+CPTradingRangePlot.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTradingRangePlot.h
+END
+CPAnnotationHostLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnnotationHostLayer.h
+END
+CPTradingRangePlot.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTradingRangePlot.m
+END
+CPAnnotationHostLayer.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnnotationHostLayer.m
+END
+CPDefinitions.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDefinitions.h
+END
+CPDefinitions.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDefinitions.m
+END
+CPAxisLabelGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisLabelGroup.h
+END
+CPXYGraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYGraph.h
+END
+CPPlotAreaFrame.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotAreaFrame.h
+END
+CPThemeTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPThemeTests.h
+END
+CPAxisLabelGroup.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisLabelGroup.m
+END
+CPXYGraph.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYGraph.m
+END
+CPPlotAreaFrame.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotAreaFrame.m
+END
+CPPlainWhiteTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlainWhiteTheme.h
+END
+CPAxisLabelTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisLabelTests.h
+END
+CPThemeTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPThemeTests.m
+END
+CPPlainWhiteTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlainWhiteTheme.m
+END
+CPAxisLabelTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisLabelTests.m
+END
+CPXYPlotSpaceTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYPlotSpaceTests.h
+END
+CPXYPlotSpaceTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYPlotSpaceTests.m
+END
+CPAxisLabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisLabel.h
+END
+CPTextStyle.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTextStyle.h
+END
+CPAxisTitle.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisTitle.h
+END
+CPAxisLabel.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisLabel.m
+END
+CPTextStyle.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTextStyle.m
+END
+CPAxisTitle.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisTitle.m
+END
+CPPathExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPathExtensions.h
+END
+CPAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnimation.h
+END
+CPPathExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPathExtensions.m
+END
+CPExceptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPExceptions.h
+END
+CPDarkGradientTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDarkGradientTheme.h
+END
+CPAnimation.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnimation.m
+END
+CPDataSourceTestCase.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDataSourceTestCase.h
+END
+CPExceptions.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPExceptions.m
+END
+NSNumberExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/NSNumberExtensions.h
+END
+CPDarkGradientTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDarkGradientTheme.m
+END
+CPDataSourceTestCase.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDataSourceTestCase.m
+END
+NSNumberExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/NSNumberExtensions.m
+END
+CPGradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGradient.h
+END
+CPGradient.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGradient.m
+END
+CPBarPlot.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPBarPlot.h
+END
+CPBarPlot.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPBarPlot.m
+END
+CPLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLayer.h
+END
+CPAxisSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisSet.h
+END
+CPLayer.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLayer.m
+END
+CPPlainBlackTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlainBlackTheme.h
+END
+CPAxisSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxisSet.m
+END
+CPScatterPlotTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPScatterPlotTests.h
+END
+CPPlainBlackTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlainBlackTheme.m
+END
+CPScatterPlotTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPScatterPlotTests.m
+END
+CPConstrainedPosition.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPConstrainedPosition.h
+END
+CPTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTheme.h
+END
+CPConstrainedPosition.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPConstrainedPosition.m
+END
+_CPFillGradient.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/_CPFillGradient.h
+END
+CPScatterPlot.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPScatterPlot.h
+END
+CPTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTheme.m
+END
+CPLayerAnnotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLayerAnnotation.h
+END
+CPLayoutManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLayoutManager.h
+END
+CPLineStyle.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLineStyle.h
+END
+_CPFillGradient.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/_CPFillGradient.m
+END
+CPScatterPlot.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPScatterPlot.m
+END
+CPLayerAnnotation.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLayerAnnotation.m
+END
+CPLayoutManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLayoutManager.m
+END
+CPLineStyle.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPLineStyle.m
+END
+CPTimeFormatter.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTimeFormatter.h
+END
+_CPFillColor.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/_CPFillColor.h
+END
+CPDerivedXYGraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDerivedXYGraph.h
+END
+CPTimeFormatter.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTimeFormatter.m
+END
+_CPFillColor.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/_CPFillColor.m
+END
+CPDerivedXYGraph.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDerivedXYGraph.m
+END
+CPResponder.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPResponder.h
+END
+CPColor.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPColor.h
+END
+CPGridLines.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGridLines.h
+END
+CPTextLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTextLayer.h
+END
+CPColor.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPColor.m
+END
+CPPlotSpaceAnnotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotSpaceAnnotation.h
+END
+CPGridLines.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGridLines.m
+END
+CPTextLayer.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTextLayer.m
+END
+CPPlotSpaceAnnotation.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotSpaceAnnotation.m
+END
+CPUtilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPUtilities.h
+END
+CPPlot.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlot.h
+END
+CPUtilities.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPUtilities.m
+END
+CPPlot.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlot.m
+END
+CPXYTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYTheme.h
+END
+CPFill.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPFill.h
+END
+CPTextStyleTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTextStyleTests.h
+END
+CPXYTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYTheme.m
+END
+CPAnimationTransition.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnimationTransition.h
+END
+CPFill.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPFill.m
+END
+CPTextStyleTests.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPTextStyleTests.m
+END
+CPAnimationTransition.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnimationTransition.m
+END
+CPGraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGraph.h
+END
+CPPlotSymbol.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotSymbol.h
+END
+CPAxis.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxis.h
+END
+CPGraph.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGraph.m
+END
+CPPlotSymbol.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotSymbol.m
+END
+CPAxis.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAxis.m
+END
+CPAnnotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnnotation.h
+END
+CPGridLineGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGridLineGroup.h
+END
+CPXYPlotSpace.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYPlotSpace.h
+END
+CPAnnotation.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnnotation.m
+END
+CPGridLineGroup.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPGridLineGroup.m
+END
+CPXYPlotSpace.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYPlotSpace.m
+END
+CPBorderedLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPBorderedLayer.h
+END
+CPPolarPlotSpace.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPolarPlotSpace.h
+END
+CPBorderedLayer.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPBorderedLayer.m
+END
+_CPFillImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/_CPFillImage.h
+END
+CPStocksTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPStocksTheme.h
+END
+CPColorSpace.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPColorSpace.h
+END
+CPSlateTheme.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPSlateTheme.h
+END
+CPPlotRange.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotRange.h
+END
+CPPlotGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotGroup.h
+END
+CPPolarPlotSpace.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPolarPlotSpace.m
+END
+_CPFillImage.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/_CPFillImage.m
+END
+CPStocksTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPStocksTheme.m
+END
+mainpage.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/mainpage.h
+END
+CPPieChart.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPieChart.h
+END
+CPColorSpace.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPColorSpace.m
+END
+CPSlateTheme.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPSlateTheme.m
+END
+CPPlotRange.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotRange.m
+END
+CPPlotGroup.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPlotGroup.m
+END
+CPXYAxisSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPXYAxisSet.h
+END
+CPAnimationKeyFrame.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPAnimationKeyFrame.h
+END
+CPPieChart.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPPieChart.m
+END
+CPDarkGradientThemeTests.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/CPDarkGradientThemeTests.h
+END
+NSDecimalNumberExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/rwisman_acceleration/!svn/ver/42/Temperature/core-plot/framework/Source/NSDecimalNumberExtensions.h
+END

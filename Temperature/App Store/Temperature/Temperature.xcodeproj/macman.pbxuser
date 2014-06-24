@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	1863012F1423AB4E0028F9BD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA5142383D10028F9BD /* TemperaturePlotController.m */;
+		name = "TemperaturePlotController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	186301301423AB4E0028F9BD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA6142383D10028F9BD /* TemperatureViewController.h */;
+		name = "TemperatureViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 440;
+		vrLoc = 0;
+	};
+	1863023714240C930028F9BD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA7142383D10028F9BD /* TemperatureViewController.mm */;
+		name = "TemperatureViewController.mm: 191";
+		rLen = 0;
+		rLoc = 5107;
+		rType = 0;
+		vrLen = 569;
+		vrLoc = 4747;
+	};
+	1863023814240C930028F9BD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1863FF09142384D40028F9BD /* stop.png */;
+	};
+	1863FD5E142382250028F9BD /* Temperature */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Temperature;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	1863FD6D1423823C0028F9BD /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	1863FD6E1423823C0028F9BD /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	1863FD9A142383D10028F9BD /* AppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {649, 247}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 533}";
+		};
+	};
+	1863FD9C142383D10028F9BD /* BleepMachine.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {938, 866}}";
+			sepNavSelRange = "{1008, 0}";
+			sepNavVisRange = "{0, 1494}";
+			sepNavWindowFrame = "{{15, 156}, {997, 1017}}";
+		};
+	};
+	1863FD9D142383D10028F9BD /* BleepMachine.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 1677}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 668}";
+			sepNavWindowFrame = "{{107, 72}, {997, 1017}}";
+		};
+	};
+	1863FD9F142383D10028F9BD /* Data.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {350, 312}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 266}";
+		};
+	};
+	1863FDA0142383D10028F9BD /* MeterView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {938, 1066}}";
+			sepNavSelRange = "{2324, 10}";
+			sepNavVisRange = "{576, 1935}";
+		};
+	};
+	1863FDA1142383D10028F9BD /* MeterView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {992, 3575}}";
+			sepNavSelRange = "{2637, 0}";
+			sepNavVisRange = "{2070, 1637}";
+			sepNavWindowFrame = "{{61, 114}, {997, 1017}}";
+		};
+	};
+	1863FDA2142383D10028F9BD /* PlotController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {938, 889}}";
+			sepNavSelRange = "{932, 0}";
+			sepNavVisRange = "{0, 1102}";
+			sepNavWindowFrame = "{{84, 93}, {997, 1017}}";
+		};
+	};
+	1863FDA3142383D10028F9BD /* PlotController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {902, 3146}}";
+			sepNavSelRange = "{4621, 0}";
+			sepNavVisRange = "{4034, 1609}";
+			sepNavWindowFrame = "{{794, 90}, {961, 919}}";
+		};
+	};
+	1863FDA5142383D10028F9BD /* TemperaturePlotController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {431, 241}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 287}";
+		};
+	};
+	1863FDA6142383D10028F9BD /* TemperatureViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {938, 949}}";
+			sepNavSelRange = "{112, 0}";
+			sepNavVisRange = "{0, 2189}";
+			sepNavWindowFrame = "{{15, 156}, {997, 1017}}";
+		};
+	};
+	1863FDA7142383D10028F9BD /* TemperatureViewController.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1174, 6149}}";
+			sepNavSelRange = "{4477, 0}";
+			sepNavVisRange = "{3430, 2102}";
+			sepNavWindowFrame = "{{61, 114}, {997, 1017}}";
+		};
+	};
+	18E06AE8142CEBCB0037B492 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Temperature-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/d/Temperature Xcode4/Temperature-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	18E06AEB142CEBCB0037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA7142383D10028F9BD /* TemperatureViewController.mm */;
+		name = "TemperatureViewController.mm: 158";
+		rLen = 0;
+		rLoc = 4477;
+		rType = 0;
+		vrLen = 2102;
+		vrLoc = 3430;
+	};
+	18E06AEC142CEBCB0037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA6142383D10028F9BD /* TemperatureViewController.h */;
+		name = "TemperatureViewController.h: 7";
+		rLen = 0;
+		rLoc = 112;
+		rType = 0;
+		vrLen = 2189;
+		vrLoc = 0;
+	};
+	18E06AED142CEBCB0037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA2142383D10028F9BD /* PlotController.h */;
+		name = "PlotController.h: 35";
+		rLen = 0;
+		rLoc = 932;
+		rType = 0;
+		vrLen = 1102;
+		vrLoc = 0;
+	};
+	18E06AEE142CEBCB0037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA1142383D10028F9BD /* MeterView.m */;
+		name = "MeterView.m: 84";
+		rLen = 0;
+		rLoc = 2637;
+		rType = 0;
+		vrLen = 1637;
+		vrLoc = 2070;
+	};
+	18E06B00142CF0690037B492 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Temperature-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/d/Temperature Xcode4/Temperature-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	18E06B03142CF0690037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA7142383D10028F9BD /* TemperatureViewController.mm */;
+		name = "TemperatureViewController.mm: 158";
+		rLen = 0;
+		rLoc = 4477;
+		rType = 0;
+		vrLen = 2102;
+		vrLoc = 3430;
+	};
+	18E06B04142CF0690037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA6142383D10028F9BD /* TemperatureViewController.h */;
+		name = "TemperatureViewController.h: 7";
+		rLen = 0;
+		rLoc = 112;
+		rType = 0;
+		vrLen = 2189;
+		vrLoc = 0;
+	};
+	18E06B05142CF0690037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA2142383D10028F9BD /* PlotController.h */;
+		name = "PlotController.h: 35";
+		rLen = 0;
+		rLoc = 932;
+		rType = 0;
+		vrLen = 1102;
+		vrLoc = 0;
+	};
+	18E06B06142CF0690037B492 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1863FDA1142383D10028F9BD /* MeterView.m */;
+		name = "MeterView.m: 84";
+		rLen = 0;
+		rLoc = 2637;
+		rType = 0;
+		vrLen = 1637;
+		vrLoc = 2070;
+	};
+	1D6058900D05DD3D006BFB54 /* Temperature */ = {
+		activeExec = 0;
+		executables = (
+			1863FD5E142382250028F9BD /* Temperature */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 1863FD5E142382250028F9BD /* Temperature */;
+		activeSDKPreference = iphoneos4.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Temperature */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Temperature */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 1863FD6E1423823C0028F9BD /* Code sense */;
+		executables = (
+			1863FD5E142382250028F9BD /* Temperature */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					59.58349609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					172,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					213,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 338491290;
+			PBXWorkspaceStateSaveDate = 338491290;
+		};
+		perUserProjectItems = {
+			1863012F1423AB4E0028F9BD = 1863012F1423AB4E0028F9BD /* PBXTextBookmark */;
+			186301301423AB4E0028F9BD = 186301301423AB4E0028F9BD /* PBXTextBookmark */;
+			1863023714240C930028F9BD = 1863023714240C930028F9BD /* PBXTextBookmark */;
+			1863023814240C930028F9BD = 1863023814240C930028F9BD /* PBXBookmark */;
+			18E06AE8142CEBCB0037B492 = 18E06AE8142CEBCB0037B492 /* PlistBookmark */;
+			18E06AEB142CEBCB0037B492 = 18E06AEB142CEBCB0037B492 /* PBXTextBookmark */;
+			18E06AEC142CEBCB0037B492 = 18E06AEC142CEBCB0037B492 /* PBXTextBookmark */;
+			18E06AED142CEBCB0037B492 = 18E06AED142CEBCB0037B492 /* PBXTextBookmark */;
+			18E06AEE142CEBCB0037B492 = 18E06AEE142CEBCB0037B492 /* PBXTextBookmark */;
+			18E06B00142CF0690037B492 = 18E06B00142CF0690037B492 /* PlistBookmark */;
+			18E06B03142CF0690037B492 = 18E06B03142CF0690037B492 /* PBXTextBookmark */;
+			18E06B04142CF0690037B492 = 18E06B04142CF0690037B492 /* PBXTextBookmark */;
+			18E06B05142CF0690037B492 = 18E06B05142CF0690037B492 /* PBXTextBookmark */;
+			18E06B06142CF0690037B492 = 18E06B06142CF0690037B492 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 1863FD6D1423823C0028F9BD /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* Temperature-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{328, 140}, {997, 1017}}";
+		};
+	};
+}
